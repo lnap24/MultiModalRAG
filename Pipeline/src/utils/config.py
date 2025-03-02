@@ -16,9 +16,9 @@ class Config:
         self.clip_model_id = "openai/clip-vit-base-patch32"  # Image embeddings model
         
         # LLM Settings
-        self.llm_provider = "ollama"  # or "ollama"
+        self.llm_provider = "ollama"  # Default Method
         self.openai_model = "gpt-4"  # OpenAI model
-        self.ollama_model = "llama2"  # Ollama model
+        self.ollama_model = "phi"  # Ollama model
         
         # Vector Store Settings
         self.index_name_text = "rag-app"  # Separate index for text

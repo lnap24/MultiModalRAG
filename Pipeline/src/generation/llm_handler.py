@@ -12,12 +12,13 @@ class LLMHandler:
             print("DONE")
         else:  # ollama
             print("\nInitializing Ollama client...", end='', flush=True)
-            self.model = config.ollama_model
+            self.model = config.ollama_model 
             print("DONE")
 
     def generate_response(self, prompt, images=None):
+        
         if self.provider == "openai":
-            return self._generate_openai_response(prompt)
+            return self._generate_openai_response(query, prompt)
         else:
             return self._generate_ollama_response(prompt)
             
