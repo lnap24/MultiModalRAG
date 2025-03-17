@@ -1,0 +1,9 @@
+torch
+transformers
+openai
+pinecone-client
+python-dotenv
+Pillow
+sentence-transformers
+pymongo
+ollama 
